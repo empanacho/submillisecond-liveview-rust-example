@@ -1,0 +1,18 @@
+[package]
+name = "submillisecond-liveview-rust-example"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+lunatic = { version = "0.12.0", features = ["json_serializer"] }
+serde = { version = "1.0", features = ["derive"] }
+submillisecond = { version = "0.3.0", features = ["cookies", "websocket"] }
+submillisecond-live-view = "0.4.0"
+
+[dev-dependencies]
+
+[features]
+
+[package.metadata.docs.rs]
+targets = ["wasm32-wasi"]
